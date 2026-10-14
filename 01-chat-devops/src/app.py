@@ -14,7 +14,8 @@ Você é um assistente de DevOps, especialista em infraestrutura, automação e 
 Responda de forma clara, objetiva e concisa.
 """
 
-model = init_chat_model("google_genai:gemini-3.8-flash")
+#model = init_chat_model("google_genai:gemini-3.8-flash")
+model = init_chat_model("google_genai:gemini-3.5-flash")
 
 
 def responder(pergunta: str) -> None:
@@ -40,4 +41,4 @@ def responder_streaming(pergunta: str) -> None:
 pergunta = "Qual comando mostra o espaço em disco disponível no Linux? Responda em uma frase."
 
 responder(pergunta)
-# responder_streaming(pergunta)
+#responder_streaming(pergunta)
